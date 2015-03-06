@@ -42,5 +42,3 @@ function basically the same as the extension.
 ```
 javascript:((function(){var doc=document;while(doc.activeElement.contentDocument)doc=doc.activeElement.contentDocument;var elems=doc.activeElement.querySelectorAll('[data-blogger-escaped-style]');for(var i=0;i<elems.length;i++){elems[i].style.cssText=elems[i].dataset.bloggerEscapedStyle;}elems=doc.activeElement.querySelectorAll('[data-blogger-escaped-title]');for(var i=0;i<elems.length;i++){elems[i].title=elems[i].dataset.bloggerEscapedTitle;}})())
 ```
-
-Alternatively, you can drag this link to your bookmarks bar: [WysiwyBlogger](javascript:((function(){var doc=document;while(doc.activeElement.contentDocument)doc=doc.activeElement.contentDocument;var elems=doc.activeElement.querySelectorAll('[data-blogger-escaped-style]');for(var i=0;i<elems.length;i++){elems[i].style.cssText=elems[i].dataset.bloggerEscapedStyle;}elems=doc.activeElement.querySelectorAll('[data-blogger-escaped-title]');for(var i=0;i<elems.length;i++){elems[i].title=elems[i].dataset.bloggerEscapedTitle;}})())).
