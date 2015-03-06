@@ -22,8 +22,8 @@ expects.
 Get it from the [Chrome Store](https://chrome.google.com/webstore/detail/wysiwyblogger/apdeenjcfcccaoaeccbbnaiofikcpeic).
 
 If you would like to be able to use a hotkey to trigger it, you can use the Chrome's
-built-in hotkey assignment feature by clicking here:  
-[chrome://extensions/configureCommands](chrome://extensions/configureCommands)
+built-in hotkey assignment feature by pasting this address into Chrome:  
+chrome://extensions/configureCommands
 
 ## How to use
 
