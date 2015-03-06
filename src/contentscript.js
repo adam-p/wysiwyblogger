@@ -25,6 +25,8 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     return;
   }
 
+  // Here begins the meat of this extension: unmangling the attributes.
+
   var mangledElems = focusedElem.querySelectorAll('[data-blogger-escaped-style]');
   for (var i = 0; i < mangledElems.length; i++) {
       mangledElems[i].style.cssText = mangledElems[i].dataset.bloggerEscapedStyle;
@@ -36,7 +38,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
   }
 });
 
-
+// Copied from Markdown Here.
 // Finds and returns the page element that currently has focus. Drills down into
 // iframes if necessary.
 function findFocusedElem(document) {
@@ -72,6 +74,7 @@ function findFocusedElem(document) {
   return focusedElem;
 }
 
+// Copied from Markdown Here.
 // Returns true if the given element can be properly rendered (i.e., if it's
 // a rich-edit compose element).
 function elementCanBeRendered(elem) {
