@@ -1,5 +1,5 @@
 /*
- * Copyright Adam Pritchard 2015
+ * Copyright Adam Pritchard 2016
  * MIT License : http://adampritchard.mit-license.org/
  */
 
@@ -8,7 +8,7 @@
 /*jshint devel:true*/
 
 
-chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (!request || (request.action !== 'activate')) {
     return;
   }

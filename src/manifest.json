@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "WysiwyBlogger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fix mangled Blogger styles",
   "homepage_url": "https://github.com/adam-p/wysiwyblogger",
   "minimum_chrome_version": "6",
@@ -23,5 +23,10 @@
       "38": "icon.png"
     },
     "default_title": "WysiwyBlogger"
+  },
+  "applications": {
+    "gecko": {
+      "id": "WysiwyBlogger@adam.pritchard"
+    }
   }
 }
