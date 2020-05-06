@@ -23,4 +23,4 @@ clean:
 	rm -f $(CHROME_PACKAGE_NAME)
 	find . -name "desktop.ini" -or -name ".*" -and -not -name "." -and -not -name ".git*" -print0 | xargs -0 rm -rf
 
-all: clean chrome mozilla
+all:chrome mozilla
